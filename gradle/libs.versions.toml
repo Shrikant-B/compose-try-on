@@ -1,0 +1,85 @@
+[versions]
+agp = "8.8.2"
+constraintlayoutCompose = "1.1.1"
+kotlin = "2.0.21"
+kotlinKapt = "1.9.24"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+kotlinxCoroutinesAndroid = "1.7.3"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.10.1"
+composeBom = "2025.02.00"
+appcompat = "1.7.0"
+lifecycleViewmodelKtx = "2.8.7"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+material3 = "1.3.1"
+roomRuntime = "2.6.1"
+roomRuntimeVersion = "2.6.1"
+daggerVersion = "2.51.1"
+daggerCompilerVersion = "2.46.1"
+retrofitVersion = "2.9.0"
+okHttpVersion = "4.12.0"
+moshiVersion = "1.15.0"
+coreTestingVersion = "2.2.0"
+androidXJunitVersion = "1.2.1"
+espressoCoreVersion = "3.6.1"
+mockitoCoreVersion = "3.12.4"
+mockitoKotlinVersion = "1.6.0"
+kotlinxCoroutinesTestVersion = "1.7.3"
+turbineVersion = "0.9.0"
+
+[libraries]
+androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayoutCompose" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntimeVersion" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+dagger = { group = "com.google.dagger", name = "dagger", version.ref = "daggerVersion" }
+daggerCompiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "daggerCompilerVersion" }
+dagger-android = { group = "com.google.dagger", name = "dagger-android-support", version.ref = "daggerVersion" }
+dagger-android-processor = { group = "com.google.dagger", name = "dagger-android-processor", version.ref = "daggerCompilerVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+retrofitConverterMoshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofitVersion" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okHttpVersion" }
+okHttpLoggingIntercepter = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttpVersion" }
+moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshiVersion" }
+moshiKotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshiVersion" }
+moshiCodegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshiVersion" }
+moshiAdapters = { group = "com.squareup.moshi", name = "moshi-adapters", version.ref = "moshiVersion" }
+
+coreTesting = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTestingVersion" }
+mockitoCore = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoCoreVersion" }
+mockitoKotlin = { group = "com.nhaarman", name = "mockito-kotlin", version.ref = "mockitoKotlinVersion" }
+kotlinxCoroutinesTest = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTestVersion" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbineVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinKapt"}
